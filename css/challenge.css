@@ -363,6 +363,10 @@ table.resource-table td:first-child {
   background: #fff;
 }
 
+.grid-item img.portrait-top {
+  object-position: center top;
+}
+
 .empty-avatar {
   background: linear-gradient(180deg, #f7f8fa, #eef1f4);
 }
