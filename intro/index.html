@@ -84,9 +84,38 @@
       <p>赛道二的主要任务是对事件流中的目标事件进行逐事件分割。参赛队伍根据事件小目标特性自行设计相关算法，使用主办方提供的事件数据集进行模型训练，最终以交并比（IoU）、准确率（ACC）、检测率（Pd）和虚警率（Fa）作为主要评价指标，衡量参赛队伍算法模型的性能。</p>
 
       <h2 id="Dataset">数据集简介</h2>
-      <p>赛道一数据集简介：<span class="todo">待补充</span></p>
-      <p>赛道二数据集简介：<span class="todo">待补充</span></p>
-      <p>数据集图片与样例展示：<span class="todo">待补充</span></p>
+      <h3>赛道一数据集简介</h3>
+      <p>竞赛数据由国防科技大学与武汉大学联合开发，包括：基于热红外卫星的 IRAir 数据集、基于 Landsat 卫星的 IRSatVideo-LEO 数据集，以及实测卫星热红外视频数据。共 1400 段视频序列（1000 段用于训练，200 段用于验证，200 段用于测试）。比赛开始后，将发布训练集和验证集视频及掩码标签；进入评测阶段时公布测试集视频，测试集标签不公开。</p>
+      <table class="data-table center-table">
+        <tr>
+          <th>数据集</th>
+          <th>数据集简介</th>
+        </tr>
+        <tr>
+          <td>IRAir</td>
+          <td>数据来源：热红外 SDG 卫星一号图像，仿真目标<br>分辨率：256×256</td>
+        </tr>
+        <tr>
+          <td>IRSatVideo-LEO</td>
+          <td>数据来源：Landsat 卫星图像，仿真目标<br>分辨率：1024×1024</td>
+        </tr>
+        <tr>
+          <td>实测热红外视频数据</td>
+          <td>数据来源：实测卫星热红外视频<br>分辨率：512×640</td>
+        </tr>
+      </table>
+      <h3>赛道二数据集简介</h3>
+      <p>基于 DAVIS346 事件相机的 EV-UAV 数据集作为训练、验证和测试数据集。总共 147 段序列（99 段用于训练，24 段用于验证，24 段用于测试）。（暂定）</p>
+      <table class="data-table center-table">
+        <tr>
+          <th>数据集</th>
+          <th>数据集简介</th>
+        </tr>
+        <tr>
+          <td>EV-UAV</td>
+          <td>数据来源：DAVIS346 事件相机实拍<br>分辨率：346x260</td>
+        </tr>
+      </table>
 
       <h2 id="Evaluation">挑战赛评价方式</h2>
       <h3>赛道一评价方式</h3>
@@ -122,26 +151,6 @@
       <div class="formula">\[Pd=\frac{TD}{AT}, \quad Fa=\frac{FD}{N_{frame} \times H \times W}\]</div>
       <div class="formula">\[Score_{Fa}=e^{-10000 \times Fa}\]</div>
       <div class="formula">\[Score=0.4Pd+0.3Score_{Fa}+0.2IoU+0.1Acc\]</div>
-
-      <h2 id="Hardware">硬件与系统资源</h2>
-      <table class="resource-table">
-        <tr>
-          <td>CPU</td>
-          <td>待补充</td>
-        </tr>
-        <tr>
-          <td>GPU</td>
-          <td>待补充</td>
-        </tr>
-        <tr>
-          <td>内存</td>
-          <td>待补充</td>
-        </tr>
-        <tr>
-          <td>操作系统</td>
-          <td>待补充</td>
-        </tr>
-      </table>
 
       <h2 id="Submission">结果提交方式</h2>
       <p>结果提交格式、提交入口和提交次数限制：<span class="todo">待补充</span></p>
