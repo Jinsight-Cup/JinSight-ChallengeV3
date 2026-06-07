@@ -85,7 +85,7 @@
 
       <h2 id="Dataset">数据集简介</h2>
       <h3>赛道一数据集简介</h3>
-      <p>竞赛数据由国防科技大学与武汉大学联合开发，包括：基于热红外卫星的 IRAir 数据集、基于 Landsat 卫星的 IRSatVideo-LEO 数据集，以及实测卫星热红外视频数据。共 1400 段视频序列（1000 段用于训练，200 段用于验证，200 段用于测试）。比赛开始后，将发布训练集和验证集视频及掩码标签；进入评测阶段时公布测试集视频，测试集标签不公开。</p>
+      <p>竞赛数据由国防科技大学与武汉大学联合开发，包括：基于热红外卫星的 IRAir 数据集、基于 Landsat 卫星的 IRSatVideo-LEO 数据集、基于高分四号卫星的 IRSatVideo-GEO 数据集，以及实测卫星热红外视频数据。共 1400 段视频序列（1000 段用于训练，200 段用于验证，200 段用于测试）。比赛开始后，将发布训练集和验证集视频及掩码标签；进入评测阶段时公布测试集视频，测试集标签不公开。</p>
       <table class="data-table center-table">
         <tr>
           <th>数据集</th>
@@ -94,18 +94,23 @@
         </tr>
         <tr>
           <td>IRAir</td>
-          <td>数据来源：热红外 SDG 卫星一号图像，仿真目标<br>分辨率：256×256</td>
+          <td>数据来源：热红外 SDG 卫星一号图像，仿真目标<br>目标特点：飞机，低轨，暗目标<br>分辨率：256x256</td>
           <td><img src="../img/dataset/image1.png" alt="IRAir 图像与目标示意" style="display: block; width: 100%; height: auto;"></td>
         </tr>
         <tr>
           <td>IRSatVideo-LEO</td>
-          <td>数据来源：Landsat 卫星图像，仿真目标<br>分辨率：1024×1024</td>
+          <td>数据来源：Landsat 卫星图像，仿真目标<br>目标特点：低轨，亮目标，短波红外<br>分辨率：1024x1024</td>
           <td><img src="../img/dataset/image2.png" alt="IRSatVideo-LEO 图像与目标示意" style="display: block; width: 100%; height: auto;"></td>
         </tr>
         <tr>
+          <td>IRSatVideo-GEO</td>
+          <td>数据来源：高分四号卫星图像，仿真目标<br>目标特点：地球同步轨道，中波红外，弱目标<br>分辨率：742x733（平均）</td>
+          <td><img src="../img/dataset/image3.png" alt="IRSatVideo-GEO 图像与目标示意" style="display: block; width: 100%; height: auto;"></td>
+        </tr>
+        <tr>
           <td>实测热红外视频数据</td>
-          <td>数据来源：实测卫星热红外视频<br>分辨率：512×640</td>
-          <td><img src="../img/dataset/image3.png" alt="实测热红外视频数据图像与目标示意" style="display: block; width: 100%; height: auto;"></td>
+          <td>数据来源：实测卫星热红外视频<br>目标特点：长波<br>分辨率：512x640</td>
+          <td><img src="../img/dataset/image4.png" alt="实测热红外视频数据图像与目标示意" style="display: block; width: 100%; height: auto;"></td>
         </tr>
       </table>
       <h3>赛道二数据集简介</h3>
